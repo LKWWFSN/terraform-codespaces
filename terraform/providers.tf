@@ -1,4 +1,4 @@
 provider "github" {
-  owner = "LKWWFSN"
-  token = ""
+  owner = var.github_owner
+  token = var.github_token
 }

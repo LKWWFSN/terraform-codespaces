@@ -1,12 +1,6 @@
 resource "github_repository" "example" {
-  name        = "example"
-  description = "My awesome codebase"
+  name        = var.repository_name
+  description = var.repository_description
+  visibility  = var.repository_visibility
 
-  visibility = "public"
-
-  template {
-    owner                = "github"
-    repository           = "terraform-template-module"
-    include_all_branches = true
-  }
 }
